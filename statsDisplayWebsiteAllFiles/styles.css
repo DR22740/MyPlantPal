@@ -1,0 +1,16 @@
+canvas {
+    width: 100%;  /* Make the canvas take up 100% of the container width */
+    max-width: 100%;  /* Ensure the canvas doesn’t stretch beyond 100% */
+    height: auto;  /* Let the height adjust dynamically based on the width */
+    aspect-ratio: 16 / 9;  /* Maintain a 16:9 aspect ratio, adjust this if needed */
+  }
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #e3fce3;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}

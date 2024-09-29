@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sensor Data Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <!-- Include Chart.js -->
+<!-- Include Chart.js (version 3.7.1) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1"></script>
+
+<!-- Include the moment.js date adapter for Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/moment@2.29.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0"></script>
+</head>
+<body>
+  <h1>Sensor Data Dashboard</h1>
+
+  <!-- Buttons to control data fetching -->
+  <button id="startButton">Start Fetching Data</button>
+  <button id="stopButton" disabled>Stop Fetching Data</button>
+
+  <!-- Section to display the graph -->
+  <div>
+    <h2>Temperature</h2>
+    <canvas id="temperatureChart" width="1000" height="400"></canvas>
+  </div>
+  <div>
+    <h2>Humidity</h2>
+    <canvas id="humidityChart" width="1000" height="400"></canvas>
+  </div>
+  <div>
+    <h2>Light Intensity</h2>
+    <canvas id="lightIntensityChart" width="1000" height="400"></canvas>
+  </div>
+  <div>
+    <h2>Height</h2>
+    <canvas id="heightChart" width="1000" height="400"></canvas>
+  </div>
+
+
+  <!-- Firebase configuration and custom script -->
+  <script src="scripts.js"></script>
+</body>
+</html>
